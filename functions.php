@@ -23,6 +23,8 @@ function dw_scripts() {
 	wp_enqueue_script('dw-ocean');
 	wp_register_script('dw-drawyer', get_stylesheet_directory_uri().'/js/DW.drawyer.js', array(),NULL, true);
 	wp_enqueue_script('dw-drawyer');
+	wp_register_script('jquery-magnific-popup', get_stylesheet_directory_uri().'/js/jquery.magnific-popup.min.js', array('jquery'),NULL, true);
+	wp_enqueue_script('jquery-magnific-popup');
 }
 add_action( 'wp_enqueue_scripts', 'dw_scripts' ); 
 
